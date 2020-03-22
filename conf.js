@@ -31,9 +31,9 @@ exports.config = {
         shardTestFiles: true,
         maxInstances: 2,
         chromeOptions: {
-            
             args: [
-                                // disable chrome's wakiness
+                'no-sandbox',
+                // disable chrome's wakiness
                 '--disable-infobars',
                 '--disable-extensions',
                 'verbose',
