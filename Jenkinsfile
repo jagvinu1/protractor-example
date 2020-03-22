@@ -8,9 +8,8 @@ pipeline {
         }
         stage('testing') {
             steps {
-                sh 'npm install'
-                sh 'protractor conf.js'
-            }
+                sh 'node -v'
+                }
         }
     }
 }
