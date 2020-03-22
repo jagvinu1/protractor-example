@@ -11,5 +11,11 @@ pipeline {
                  userRemoteConfigs: [[url: 'https://github.com/jagvinu1/protractor-example.git']]])
             }
         }
+        stage('testing') {
+            steps {
+                sh 'npm install'
+                sh 'protractor conf.js'
+            }
+        }
     }
 }
