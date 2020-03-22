@@ -1,8 +1,8 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('Checkout'){
-            steps{
+    stages {
+        stage('Checkout') {
+            steps {
                 checkout([$class: 'GitSCM',
                  branches: [[name: '*/master']], 
                 doGenerateSubmoduleConfigurations: false, 
