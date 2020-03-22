@@ -3,7 +3,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                    echo"Hello World"
+                checkout([$class: 'GitSCM',
+                 branches: [[name: '*/master']], 
+                doGenerateSubmoduleConfigurations: false, 
+                extensions: [],
+                 submoduleCfg: [], 
+                 userRemoteConfigs: [[url: 'https://github.com/jagvinu1/protractor-example.git']]])
             }
         }
     }
