@@ -31,7 +31,9 @@ exports.config = {
         shardTestFiles: true,
         maxInstances: 2,
         chromeOptions: {
+            
             args: [
+                "webdriver.chrome.driver": "node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
                 // disable chrome's wakiness
                 '--disable-infobars',
                 '--disable-extensions',
