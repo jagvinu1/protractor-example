@@ -33,8 +33,7 @@ exports.config = {
         chromeOptions: {
             
             args: [
-                "webdriver.chrome.driver": "node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
-                // disable chrome's wakiness
+                                // disable chrome's wakiness
                 '--disable-infobars',
                 '--disable-extensions',
                 'verbose',
